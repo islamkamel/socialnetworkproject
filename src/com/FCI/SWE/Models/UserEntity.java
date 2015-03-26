@@ -30,9 +30,13 @@ public class UserEntity {
 	private String email;
 	private String password;
 	private String friendname;
+<<<<<<< HEAD
 	private String friendname1;
 	private String username;
 	private String message;
+=======
+	private String username;
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 	/**
 	 * Constructor accepts user data
 	 * 
@@ -48,6 +52,7 @@ public class UserEntity {
 		this.email = email;
 		this.password = password;		
 	}
+<<<<<<< HEAD
 	public UserEntity( String message, String friendname,String name,String email ) {
 		this.message = message;
 		this.friendname = friendname;
@@ -55,6 +60,8 @@ public class UserEntity {
 		this.email = email;
 		
 	}
+=======
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 	
 	/*public UserEntity(String emailsender, String emailreciever ) {
 		this.emailsender = emailsender;
@@ -67,6 +74,7 @@ public class UserEntity {
 		this.username=username;
 
 	}
+<<<<<<< HEAD
 public UserEntity( String friendname,String name,String friendname1,String email,String message){
 		this.message=message;
 		this.friendname=friendname;
@@ -74,6 +82,8 @@ public UserEntity( String friendname,String name,String friendname1,String email
 		this.name=name;
 		this.message=message;
 	}
+=======
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
   
 	public String getName() {
 		return name;
@@ -93,11 +103,14 @@ public UserEntity( String friendname,String name,String friendname1,String email
 	public String username() {
 		return username;
 	}
+<<<<<<< HEAD
 	public String getmessage() {
 		return message;
 	}
 	
 	
+=======
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 	
 	public static UserEntity getUser(String json) {
 
@@ -127,6 +140,7 @@ public UserEntity( String friendname,String name,String friendname1,String email
 		return null;
 
 	}
+<<<<<<< HEAD
 	///////////////////////////////////////////////////////////////
 	public static UserEntity getmessage(String json) {
 
@@ -145,6 +159,8 @@ public UserEntity( String friendname,String name,String friendname1,String email
 	}
 	
 	
+=======
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 	public static UserEntity getfriend(String json) {
 
 		JSONParser parser = new JSONParser();
@@ -250,6 +266,7 @@ public UserEntity( String friendname,String name,String friendname1,String email
 
 		return null;
 	}
+<<<<<<< HEAD
 	/////////////////////////////////////////////////////////////////////
 	public static UserEntity getmessage(String message, String friendname,String name,String email) {
 		DatastoreService datastore = DatastoreServiceFactory
@@ -295,13 +312,21 @@ public UserEntity( String friendname,String name,String friendname1,String email
 
 		return null;
 	}
+=======
+	
+	
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 
 	/**
 	 * This method will be used to save user object in datastore
 	 * 
 	 * @return boolean if user is saved correctly or not
 	 */
+<<<<<<< HEAD
 	public Boolean savefriend() {//////////////
+=======
+	public Boolean savefriend() {///////////////نحط برامتير للفانكشن التالتة 
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
 		Query gaeQuery = new Query("users");/////////////////////////////////////request
@@ -340,6 +365,7 @@ public UserEntity( String friendname,String name,String friendname1,String email
 		return true;
 
 	}
+<<<<<<< HEAD
 	//////////////////////////////////////////////////////////////////////////////////////////////
 	public Boolean savemessage() {//////////////
 		DatastoreService datastore = DatastoreServiceFactory
@@ -403,5 +429,8 @@ public Boolean savegroupmessage() {//////////////
 }
 }
 
+=======
+}
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 	
 

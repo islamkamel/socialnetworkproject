@@ -55,32 +55,41 @@ public class UserController {
 	public Response signout() {
 		return Response.ok(new Viewable("/jsp/signout")).build();
 	}
+<<<<<<< HEAD
 	@Path("/notify")
 	public Response notification() {
 		return Response.ok(new Viewable("/jsp/notify")).build();
 	}
+=======
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 	
 	@GET
 	@Path("/addfriend")
 	public Response addfriend() {//////////////////////////////////////////////////////////////////////////
 		return Response.ok(new Viewable("/jsp/addfriend")).build();
 	}
+<<<<<<< HEAD
 	@GET
 	@Path("/sendmessage")
 	public Response sendmessage() {//////////////////////////////////////////////////////////////////////////
 		return Response.ok(new Viewable("/jsp/sendmessage")).build();
 	}
+=======
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 
 	@GET
 	@Path("/acceptrequest")
 	public Response acceptrequest() {//////////////////////////////////////////////////////////////////////////
 		return Response.ok(new Viewable("/jsp/acceptrequest")).build();
 	}
+<<<<<<< HEAD
 	@GET
 	@Path("/groupmessage")
 	public Response groupmessage() {//////////////////////////////////////////////////////////////////////////
 		return Response.ok(new Viewable("/jsp/groupmessage")).build();
 	}
+=======
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 	/**
 	 * Action function to render home page of application, home page contains
 	 * only signup and login buttons
@@ -393,6 +402,7 @@ public class UserController {
 		 */
 		return "Failed";
 	}
+<<<<<<< HEAD
 	/////////////////////////////////////////////////////////////////////////////////
 	@POST
 	@Path("/sendmessage")///////////////////////////send request
@@ -542,3 +552,8 @@ public class UserController {
 		return "Failed";
 	}
 	}
+=======
+	
+	
+}
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af

@@ -90,6 +90,7 @@ public class Service {
 		object.put("Status", "OK");
 		return object.toString();
 	}
+<<<<<<< HEAD
 	
 	
 	@POST
@@ -100,6 +101,8 @@ public class Service {
 		object.put("Status", "OK");
 		return object.toString();
 	}
+=======
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 	@POST
 	@Path("/addfriend")
 	public String addfriend(@FormParam("friendname") String friendname,@FormParam("username") String username) {
@@ -110,6 +113,7 @@ public class Service {
 		object.put("Status", "OK");
 		return object.toString();
 	}
+<<<<<<< HEAD
 	@POST
 	@Path("/sendmessage")
 	public String sendmessage(@FormParam("friendname") String friendname,@FormParam("name") String name,
@@ -135,6 +139,8 @@ public class Service {
 		object.put("Status", "OK");
 		return object.toString();
 	}
+=======
+>>>>>>> 815aa281f84a133b9fb5e6952f5bae6a50ec10af
 
 	/**
 	 * Login Rest Service, this service will be called to make login process
